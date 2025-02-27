@@ -1,0 +1,248 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    height: 100vh;
+    background-color: #FAFAFA;
+    overflow-y: hidden;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 60px 0px;
+}
+
+.instagramAll{
+    margin-left: 30px;
+}
+
+.imagesAndTransistion{
+    position: relative;
+}
+
+.imagesAndTransistion > #frame1 > img{
+    height:570px;
+    width:290px;
+}
+.imagesAndTransistion > #frame2 > img:nth-child(1){
+    height:540px;
+    position:absolute;
+    top:-12px;
+    left:-90px;
+    z-index: -1;
+}
+
+.imagesAndTransistion > #frame2 > img:nth-child(2){
+    height:530px;
+    position:absolute;
+    top:0;
+    left:-70px;
+    z-index: -2;
+}
+
+.transistionImages >img{
+    position:absolute;
+    top:10px;
+    left:16px;
+    transition: 1.5s ease-in;
+}  
+
+.instagramForm{
+    margin-top: 15px;
+    background-color: white;
+    border: 1px solid gainsboro;
+    height: fit-content;
+    padding: 10px 50px 20px;
+    width:380px;
+}
+.insta-font{
+    display: flex;
+    justify-content: center;
+}
+.insta-font> img{
+    width:200px;
+    height:100px;
+    margin-bottom: 20px;
+}
+
+.inputs{
+    display:flex;
+    flex-direction: column;
+}
+
+.email > input[type="text"]:focus,
+.password > input[type ="password"]:focus{
+    outline: 0;
+    border:1px solid rgb(189, 199, 159);
+}
+
+.email > input[type="text"], 
+.password > input[type="password"],
+.password > input[type="text"]{
+    height: 35px;
+    width:100%;
+    margin-bottom: 10px;
+    border:1px solid rgb(228, 228, 228);
+    border-radius: 3px;
+    padding:10px 0px 10px 10px;
+    font-size: 13px;
+    color:#262626;
+    background-color: transparent;
+    
+}
+
+.password > input[type="password"],
+.password > input[type="text"]{
+    padding-right: 70px;
+}
+
+
+#login{
+    height:35px;
+    border-radius: 10px;
+    color:white;
+    background-color: #4DB5F9;
+    font-weight: bold;
+    border: 0;
+    margin-bottom: 20px;
+
+    transition: 0.2s ease-in;
+}
+.or{
+    position: relative;
+}
+
+#or{
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 100%;
+    position: absolute;
+    top:-17px;
+    left:115px;
+    font-size: 13px;
+    font-weight: bold;
+  
+}
+.loginWithFacebook{
+    margin: 20px auto;
+}
+.loginWithFacebook  i{
+    font-size: 20px;
+    margin-right: 5px;
+}
+.loginWithFacebook > a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    margin:auto;
+    color:#385185;
+
+
+}
+#forget{
+    margin:0px auto ;
+    font-size: 14px;
+}
+#forget a{
+    text-decoration: none;
+    color:#385989;
+}
+
+.no-account{
+    border: 1px solid gainsboro;
+    background-color: white;
+   width:380px;
+    text-align: center;
+    padding:15px;
+    margin:10px 0;
+    font-size: 16px;
+
+}
+.no-account  a{
+    text-decoration: none;
+    color:#0095F6;
+    font-weight: 500;
+}
+
+#getTheApp{
+    text-align: center;
+    font-size: 14px;
+    margin:15px 0;
+}
+
+.downloadLinks{
+    display: flex;
+    justify-content: space-around;
+    margin: 0 30px;
+}
+.downloadLinks img{
+    width:25px;
+    height:25px;
+    margin: 10px 5px 0 10px;
+  
+}
+
+.googlePlay, .microsoft{
+    display: flex;
+}
+.btn{
+    width:140px;
+    background-color: black;
+    color:white;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn:active{
+    opacity: 0.7;
+}
+.btn span{
+    font-size: 10px;
+}
+.email, .password{
+    position:relative
+}
+
+#emailPlaceholder, #passwordPlaceholder{
+    position:absolute;
+    top:8px;
+    left:5px;
+    padding-left: 6px;
+    font-size: 12px;
+    opacity:0.7;
+    pointer-events: none;
+    transition: 0.1s ease;
+ 
+}
+
+#showOrHide {
+    position:absolute;
+    right:10px;
+    top:5px;
+    cursor: pointer;
+    font-weight: 500;
+    padding-left: 10px;
+
+}
+#showOrHide:hover{
+    opacity: 0.7;
+}
+
+.fadingImages{
+    width:260px;
+    overflow: hidden;
+    height:550px;
+    z-index: -1;
+}
+
+@media (max-width:950px){
+    .imagesAndTransistion{
+        display: none;
+    }
+}
